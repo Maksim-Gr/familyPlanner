@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "familyplanner"
+version = "0.1.0"
+description = "Simple Telegram Bot Planner"
+authors = ["Maksim Grishchenko <maksim.g.grishchenko@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+	{ include = "planner", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+aiogram = "^3.4.1"
+gcsa = "^2.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
